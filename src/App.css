@@ -1,38 +1,187 @@
+body{
+  margin:0;
+overflow:hidden;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  box-sizing: border-box;
+  padding: 0;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-width: 100vh;
   color: white;
+  background-image: url('/Components/HeartBackground.svg');
+}
+.banner-title{
+  margin:0;
+  padding-top: 100px;
+  padding-left: 30px;
+  font-size: large;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.ttl{
+  padding-top: 100px;
+  padding-left: 30px;
+  font-size: large;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h6{
+  padding-left: 30px;
+  color: #626466;
+}
+
+.Sec{
+  padding-left: 30px;
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  overflow: hidden;
+ 
+  
+}
+
+.homeCare{
+  border: 3px solid white;
+  border-bottom: 7px solid rgb(150, 203, 224);
+  border-radius: 30px;
+  padding: 10px 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 15%;
+  background-color: white;
+  padding-bottom: 20px;
+  margin-right:10px ;
+  background: linear-gradient(white, white 50%, rgb(150, 203, 224) 50%,rgb(150, 203, 224));
+  background-size: 100% 200%;
+  transition: background 1s;
+  
+}
+
+
+
+.primaryCare{
+    border: 3px solid white;
+    border-bottom: 7px solid rgb(88, 227, 120);
+    border-radius: 30px;
+    padding: 10px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 15%;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-right:10px ;
+    background: linear-gradient(white, white 50%, rgb(88, 227, 120) 50%,rgb(88, 227, 120));
+    background-size: 100% 200%;
+    
+    transition: background 1s;
+}
+
+.healthCare{
+  border: 3px solid white;
+  border-bottom: 7px solid rgb(244, 117, 86);
+  border-radius: 30px;
+  padding: 10px 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 15%;
+  background-color: white;
+  padding-bottom: 20px;
+  background: linear-gradient(white, white 50%, rgb(244, 117, 86) 50%,rgb(244, 117, 86));
+  background-size: 100% 200%;
+  transition: background 1s;
+}
+
+
+.primaryCare:hover, .healthCare:hover, .homeCare:hover  {
+  background-position: 100% 100%;
+  
+}
+
+
+.Boxesttl{
+  color: black;
+}
+.primaryCare:hover{
+  border-bottom: 7px solid white;
+
+}
+.healthCare:hover{
+  border-bottom: 7px solid white;
+
+}
+.homeCare:hover{
+  border-bottom: 7px solid white;
+  
+}
+.primaryCare:hover .Boxesttl{
+  color:white
+}
+
+.healthCare:hover .Boxesttl{
+  color:white
+}
+.homeCare:hover .Boxesttl{
+  color:white
+}
+
+.Boxesttl:hover h6{
+  color:white
+}
+
+@media screen and (max-width: 500px) {
+  .homeCare{
+    border: 3px solid white;
+    border-bottom: 7px solid rgb(150, 203, 224);
+    border-radius: 30px;
+    padding: 10px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 15%;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-right:10px ;
+    background: linear-gradient(white, white 50%, rgb(150, 203, 224) 50%,rgb(150, 203, 224));
+    background-size: 100% 200%;
+    transition: background 1s;
+    
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  
+  .primaryCare{
+      border: 3px solid white;
+      border-bottom: 7px solid rgb(88, 227, 120);
+      border-radius: 30px;
+      padding: 10px 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      width: 15%;
+      background-color: white;
+      padding-bottom: 20px;
+      margin-right:10px ;
+      background: linear-gradient(white, white 50%, rgb(88, 227, 120) 50%,rgb(88, 227, 120));
+      background-size: 100% 200%;
+      
+      transition: background 1s;
+  }
+  
+  .healthCare{
+    border: 3px solid white;
+    border-bottom: 7px solid rgb(244, 117, 86);
+    border-radius: 30px;
+    padding: 10px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 15%;
+    background-color: white;
+    padding-bottom: 20px;
+    background: linear-gradient(white, white 50%, rgb(244, 117, 86) 50%,rgb(244, 117, 86));
+    background-size: 100% 200%;
+    transition: background 1s;
   }
 }
