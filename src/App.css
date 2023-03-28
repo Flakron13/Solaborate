@@ -129,21 +129,76 @@ h6{
   color:white
 }
 
-.Boxesttl:hover h6{
+.healthCare:hover h6{
   color:white
 }
 
-@media screen and (max-width: 500px) {
+.primaryCare:hover h6{
+  color:white
+}
+
+.homeCare:hover h6{
+  color:white
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    margin:0;
+  overflow:hidden;
+  }
+  
+  .App {
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #282c34;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-image: url('/Components/HeartBackground.svg');
+  }
+  .banner-title{
+    margin:0;
+    padding-top: 70px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .ttl{
+    padding-top: 70px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  h6{
+    padding-left: 25px;
+    color: #626466;
+  }
+  
+  .Sec{
+    padding-left:25px;
+    padding-top: 7px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    overflow: hidden;
+   
+    
+  }
+  
   .homeCare{
     border: 3px solid white;
     border-bottom: 7px solid rgb(150, 203, 224);
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 7px 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 7px;
     width: 15%;
     background-color: white;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     margin-right:10px ;
     background: linear-gradient(white, white 50%, rgb(150, 203, 224) 50%,rgb(150, 203, 224));
     background-size: 100% 200%;
@@ -157,7 +212,7 @@ h6{
       border: 3px solid white;
       border-bottom: 7px solid rgb(88, 227, 120);
       border-radius: 30px;
-      padding: 10px 20px;
+      padding: 7px 14px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 10px;
       width: 15%;
@@ -174,7 +229,107 @@ h6{
     border: 3px solid white;
     border-bottom: 7px solid rgb(244, 117, 86);
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 7px 14px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 15%;
+    background-color: white;
+    padding-bottom: 20px;
+    background: linear-gradient(white, white 50%, rgb(244, 117, 86) 50%,rgb(244, 117, 86));
+    background-size: 100% 200%;
+    transition: background 1s;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body{
+    margin:0;
+  overflow:hidden;
+  }
+  
+  .App {
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #282c34;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-image: url('/Components/HeartBackground.svg');
+  }
+  .banner-title{
+    margin:0;
+    padding-top: 70px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .ttl{
+    padding-top: 70px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  h6{
+    padding-left: 25px;
+    color: #626466;
+  }
+  
+  .Sec{
+    padding-left:25px;
+    padding-top: 7px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    overflow: hidden;
+   
+    
+  }
+  
+  .homeCare{
+    border: 3px solid white;
+    border-bottom: 7px solid rgb(150, 203, 224);
+    border-radius: 30px;
+    padding: 7px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 7px;
+    width: 15%;
+    background-color: white;
+    padding-bottom: 14px;
+    margin-right:10px ;
+    background: linear-gradient(white, white 50%, rgb(150, 203, 224) 50%,rgb(150, 203, 224));
+    background-size: 100% 200%;
+    transition: background 1s;
+    
+  }
+  
+  
+  
+  .primaryCare{
+      border: 3px solid white;
+      border-bottom: 7px solid rgb(88, 227, 120);
+      border-radius: 30px;
+      padding: 7px 14px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      width: 15%;
+      background-color: white;
+      padding-bottom: 20px;
+      margin-right:10px ;
+      background: linear-gradient(white, white 50%, rgb(88, 227, 120) 50%,rgb(88, 227, 120));
+      background-size: 100% 200%;
+      
+      transition: background 1s;
+  }
+  
+  .healthCare{
+    border: 3px solid white;
+    border-bottom: 7px solid rgb(244, 117, 86);
+    border-radius: 30px;
+    padding: 7px 14px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     width: 15%;
